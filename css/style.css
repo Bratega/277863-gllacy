@@ -1,0 +1,20 @@
+body {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(50,50,50);
+    font-weight: normal;
+    font-family: roboto, sans-serif;
+}
+
+.slide .title {
+   font-size: 60px;
+    line-height: 61px;
+    color: rgb(255,255,255);
+}
+
+.banner h2 {
+    font-size: 35px;
+    line-height: 38px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+}

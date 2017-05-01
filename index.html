@@ -10,9 +10,9 @@
       <input type="radio" name="slider" id="slider-input-2">
       <input type="radio" name="slider" id="slider-input-3">
       <header class="main-header">
-          <div class="container">
+          <div class="container main-header-flex">
               <div class="logo">
-                  <img src="img/Logo.png" width="154" height="64" alt="Gllacy">
+                  <img src="img/logo.png" width="154" height="64" alt="Gllacy">
               </div>
               <nav class="main-nav">
                   <ul>
@@ -79,20 +79,20 @@
                   <label for="slider-input-3"></label>
               </div>   
           </section>
-          <section class="banner">
-              <div class="raspberries">
+          <section class="banners">
+              <div class="raspberries banner">
                   <h2>Малинка даром!</h2>
                   <p>
                       При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
                   </p>
-                  <a class="btn banner-btn" href=""></a>
+                  <a class="btn banner-btn" href="">Хочу варенье!</a>
               </div>
-              <div class="chocolate">
+              <div class="chocolate banner">
                   <h2>Шоколадки даром!</h2>
                   <p>
                       При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
                   </p>
-                  <a class="btn banner-btn" href=""></a>
+                  <a class="btn banner-btn" href="">Хочу шоколадки!</a>
               </div>
           </section>
           <section class="popular">
@@ -108,7 +108,7 @@
               <div class="catalog-item hit">
                   <img src="img/hit.png" width="61" height="61" alt="Хит">
                   <img src="img/item2.jpg" width="267" height="267" alt="Мороженка">
-                  <b><span>380₽</span>/кг</b>
+                  <b><span class="big">380₽</span>/кг</b>
                   <p>
                       Сливочно-кофейное с кусочками шоколада
                   </p>
@@ -117,7 +117,7 @@
               <div class="catalog-item hit">
                   <img src="img/hit.png" width="61" height="61" alt="Хит">
                   <img src="img/item3.jpg" width="267" height="267" alt="Мороженка">
-                  <b><span>355₽</span>/кг</b>
+                  <b><span class="big">355₽</span>/кг</b>
                   <p>
                       Сливочно-клубничное с присыпкой из белого шоколада
                   </p>
@@ -126,7 +126,7 @@
               <div class="catalog-item hit">
                   <img src="img/hit.png" width="61" height="61" alt="Хит">
                   <img src="img/item4.jpg" width="267" height="267" alt="Мороженка">
-                  <b><span>415₽</span>/кг</b>
+                  <b><span class="big">415₽</span>/кг</b>
                   <p>
                       Сливочное крем-брюле с карамельной подливкой
                   </p>
@@ -135,42 +135,46 @@
           </section>
           <article class="advantages">
               <b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
-              <div class="left-column">
-                  <p>
-                      Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-                  </p>
-                  <p>
-                      Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
-                  </p>
-              </div>
-              <div class="right-column">
-                  <p>
-                      Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-                  </p>
-                  <p>
-                      Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-                  </p>
-              </div>
+              <div class="advantages-content">
+                  <div class="left-column">
+                      <p>
+                          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+                      </p>
+                      <p>
+                          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
+                      </p>
+                  </div>
+                  <div class="right-column">
+                      <p>
+                          Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                      </p>
+                      <p>
+                          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому   растаять в пути и позволяет сохранить превосходный вкус.
+                      </p>
+                  </div>
+              </div>    
           </article>
-          <div class="news">
-              <a href="#">
-                  <h3>Новое в нашем блоге</h3>
-                  <p>
-                      10  способов сервировки
+          <div class="grid-columns">
+              <div class="news">
+                  <a href="#">
+                      <h3>Новое в нашем блоге</h3>
+                      <p>
+                          10  способов сервировки
                       фруктовых щербетов к
                       столу
+                      </p>
+                  </a>
+              </div>
+              <div class="subscription">
+                  <p>
+                      Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
                   </p>
-              </a>
-          </div>
-          <div class="subscription">
-              <p>
-                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
-              </p>
-              <form action="https://echo.htmlacademy.ru/" method="post">
-                  <input type="text" name="email-address" value="" placeholder="Электронная почта">
-                  <button class="btn" type="submit" value="Отправить"></button>
-              </form>
-          </div>
+                  <form action="https://echo.htmlacademy.ru/" method="post">
+                      <input type="text" name="email-address" value="" placeholder="Электронная почта">
+                      <button class="btn" type="submit" value="Отправить"></button>
+                  </form>
+              </div>
+          </div>  
           <section class="organizational-unit">
               <div class="contact-information">
                   <h3>
@@ -193,7 +197,7 @@
           </section>    
       </main>
       <footer class="main-footer">
-          <div class="container">
+          <div class="container main-footer-flex">
               <section class="social">
                   <a class="social-btn social-btn-tw" href="#">Твиттер</a>
                   <a class="social-btn social-btn-instagram" href="#">Инстаграм</a>

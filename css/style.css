@@ -4,17 +4,150 @@ body {
     color: rgb(50,50,50);
     font-weight: normal;
     font-family: roboto, sans-serif;
+    background: rgb(132,157,143);
+}
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+    padding: 0px 26px;
+}
+
+.main-header-flex {
+    display: flex;
+    margin-bottom: 33px;
+}
+
+.main-header .logo {
+    width: 154px;
+    margin-right: 24px;
+}
+
+.main-header .main-nav{
+    width: 500px;
+    margin-right: 118px;
+}
+
+.main-header .user-block {
+    width: 350px;
+}
+
+.container .information {
+    float: right;
+    text-align: right;
+    width: 350px;
+}
+.slides {
+    width: 800px;
+    text-align: center;
+}
+
+.slider .slide:nth-child(2) {
+    display: none;
+}
+
+.slider .slide:nth-child(3) {
+    display: none;
 }
 
 .slide .title {
-   font-size: 60px;
+    font-size: 60px;
     line-height: 61px;
     color: rgb(255,255,255);
 }
+.banners {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
 
-.banner h2 {
+.banners h2 {
     font-size: 35px;
     line-height: 38px;
     color: rgb(255,255,255);
     font-weight: bold;
 }
+
+.banners .banner {
+    width: 560px;
+}
+
+.popular {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+
+.popular .catalog-item {
+    width: 267px;
+}
+
+.advantages-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-columns {
+    display: flex;;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.grid-columns .news {
+    width: 560px;
+    
+}
+
+.grid-columns .subscription {
+   width: 560px; 
+}
+
+.organizational-unit {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 36px;    
+}
+
+.main-footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer .social {
+    width: 240px;
+}
+
+.main-footer .additional {
+    width: 450px;
+}
+
+.main-footer .creators {
+    width: 190px;
+}
+
+.filters {
+    width: 860px;
+    margin-bottom: 40px;
+}
+
+.catalog {
+    margin-bottom: 80px;
+}
+
+.catalog .catalog-item {
+    display: inline-block;
+    width: 267px;
+    vertical-align: top;
+    margin-bottom: 37px;
+    margin-right: 26px;
+    margin-left: -4px;
+}
+
+.catalog .catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+.pagination {
+    text-align: right;
+    margin-bottom: 65px;
+}
+

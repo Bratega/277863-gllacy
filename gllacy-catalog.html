@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси-Каталог</title> 
+    <title>HTML Academy: Глейси-Каталог</title>
+    <link href="css/style.css" rel="stylesheet">  
   </head>
   <body>
       <header class="main-header">
-          <div class="container">
+          <div class="container main-header-flex">
               <div class="logo">
                   <a href="#">
-                      <img src="img/Logo.png" width="154" height="64" alt="Gllacy">
+                      <img src="img/logo.png" width="154" height="64" alt="Gllacy">
                   </a>
               </div>
               <nav class="main-nav">
@@ -33,163 +34,177 @@
           </div>
       </header>      
       <main class="container">
-              <div class="breadcrumbs">
-                  <ul>
-                      <li>
-                          <a href="#">Главная</a>
-                      </li>
-                      <li>
-                          <a href="#">Каталогливочное</a>
-                      </li>
-                      <li>
-                          Сливочное
-                      </li>
-                  </ul>
+          <div class="information">
+              <p>
+                  С 10 до 20, ежедневно<br>
+                  <b>88124502525</b>
+              </p>
+          </div>
+          <div class="breadcrumbs">
+              <ul>
+                  <li>
+                      <a href="#">Главная</a>
+                  </li>
+                  <li>
+                      <a href="#">Каталогливочное</a>
+                  </li>
+                  <li>
+                      <a>Сливочное</a>
+                  </li>
+              </ul>
+          </div>
+          <h1>Сливочное мороженое</h1>
+          <section class="filters">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                  <fieldset>
+                      <legend>Сортировка:</legend>
+                      <select name="sorting">
+                          <option>по популярности</option>
+                          <option>сначала недорогие</option>
+                          <option>сначала дорогие</option>
+                          <option>по жирности</option>
+                      </select>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Цена:</legend>   
+                  </fieldset>
+                  <fieldset>
+                      <legend>Жирность:</legend>
+                      <input type="radio" name="fatiness" value="0" id="fatiness0-field">
+                      <label for="fatiness0-field">0%</label>
+                      <input type="radio" name="fatiness" value="10" id="fatiness10-field" checked>
+                      <label for="fatiness10-field">10%</label>
+                      <input type="radio" name="fatiness" value="<30" id="fatiness<30-field">
+                      <label for="fatiness<30-field">до 30%</label>
+                      <input type="radio" name="fatiness" value=">30" id="fatiness0>30-field">
+                      <label for="fatiness0>30-field">выше 30%</label>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Наполнители:</legend>
+                      <input type="checkbox" id="chocolate-field" checked>
+                      <label for="chocolate-field">шоколадные</label>
+                      <input type="checkbox" id="sugar-field" checked>
+                      <label for="sugar-field">сахарные присыпки</label>
+                      <input type="checkbox" id="fruit-field">
+                      <label for="fruit-field">фрукты</label>
+                      <input type="checkbox" id="syrup-field">
+                      <label for="syrup-field">сиропы</label>
+                      <input type="checkbox" id="jam-field">
+                      <label for="jam-field">джемы</label>
+                  </fieldset>
+                  <button class="btn" type="submit" value="Применить"></button> 
+              </form>      
+          </section>
+          <article class="catalog">
+              <div class="catalog-item">
+                  <img src="img/item1.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">310₽</span>/кг</b>
+                  <p>
+                      Сливочное с апельсиновым джемом и цитрусовой стружкой
+                  </p>
+                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
               </div>
-              <h1>Сливочное мороженое</h1>
-              <section class="filters">
-                  <form action="https://echo.htmlacademy.ru/" method="get">
-                      <fieldset>
-                          <legend>Сортировка:</legend>
-                          <select name="sorting">
-                              <option>по популярности</option>
-                              <option>сначала недорогие</option>
-                              <option>сначала дорогие</option>
-                              <option>по жирности</option>
-                          </select>
-                      </fieldset>
-                      <fieldset>
-                          <legend>Цена:</legend>
-                          
-                      </fieldset>
-                      <fieldset>
-                          <legend>Жирность:</legend>
-                          <input type="radio" name="fatiness" value="0" id="fatiness0-field">
-                          <label for="fatiness0-field">0%</label>
-                          <input type="radio" name="fatiness" value="10" id="fatiness10-field" checked>
-                          <label for="fatiness10-field">10%</label>
-                          <input type="radio" name="fatiness" value="<30" id="fatiness<30-field">
-                          <label for="fatiness<30-field">до 30%</label>
-                          <input type="radio" name="fatiness" value=">30" id="fatiness0>30-field">
-                          <label for="fatiness0>30-field">выше 30%</label>
-                      </fieldset>
-                      <fieldset>
-                          <legend>Наполнители:</legend>
-                          <input type="checkbox" id="chocolate-field" checked>
-                          <label for="chocolate-field">шоколадные</label>
-                          <input type="checkbox" id="sugar-field" checked>
-                          <label for="sugar-field">сахарные присыпки</label>
-                          <input type="checkbox" id="fruit-field">
-                          <label for="fruit-field">фрукты</label>
-                          <input type="checkbox" id="syrup-field">
-                          <label for="syrup-field">сиропы</label>
-                          <input type="checkbox" id="jam-field">
-                          <label for="jam-field">джемы</label>
-                      </fieldset>
-                      <button class="btn" type="submit" value="Применить"></button> 
-                  </form>      
-              </section>
-              <article class="catalog">
-                  <div class="catalog-item">
-                      <img src="img/item1.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>310₽</span>/кг</b>
+              <div class="catalog-item">
+                  <img src="img/item2.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">380₽</span>/кг</b>
+                  <p>
+                      Сливочно-кофейный с кусочками шоколада
+                  </p>  
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item3.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">355₽</span>/кг</b>
+                  <p>
+                      Сливочно-клубничное с присыпкой из белого шоколада
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item4.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">415₽</span>/кг</b>
+                  <p>
+                      Сливочное крем-брюле с карамельной подливкой
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item5.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">325₽</span>/кг</b>
+                  <p>
+                     Сливочное с брусничным джемом 
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item6.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">410₽</span>/кг</b>
+                  <p>
+                      Сливочно-черничное с цельными ягодами черники 
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item7.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">375₽</span>/кг</b>
+                  <p>
+                      Сливочно-лимонное с карамельной присыпкой
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item8.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">320₽</span>/кг</b>
+                  <p>
+                      Сливочное с шоколадной стружкой
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item9.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">340₽</span>/кг</b>
+                  <p>
+                      Сливочно-ванильное с кусочками шоколада
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item10.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">335₽</span>/кг</b>
+                  <p>
+                      Сливочноe с ментоловым сиропом
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item11.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">355₽</span>/кг</b>
+                  <p>
+                     Сливочное с кусочками черного шоколада
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+              <div class="catalog-item">
+                  <img src="img/item12.jpg" width="267" height="267" alt="Мороженка">
+                  <b><span class="big">420₽</span>/кг</b>
                       <p>
-                          Сливочное с апельсиновым джемом и цитрусовой стружкой
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item2.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>380₽</span>/кг</b>
-                      <p>
-                          Сливочно-кофейное с кусочками шоколада
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item3.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>355₽</span>/кг</b>
-                      <p>
-                          Сливочно-клубничное с присыпкой из белого шоколада
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item4.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>415₽</span>/кг</b>
-                      <p>
-                          Сливочное крем-брюле с карамельной подливкой
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item5.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>325₽</span>/кг</b>
-                      <p>
-                         Сливочное с брусничным джемом 
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item6.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>410₽</span>/кг</b>
-                      <p>
-                          Сливочно-черничное с цельными ягодами черники 
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item7.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>375₽</span>/кг</b>
-                      <p>
-                          Сливочно-лимонное с карамельной присыпкой
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item8.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>320₽</span>/кг</b>
-                      <p>
-                          Сливочное с шоколадной стружкой
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item9.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>340₽</span>/кг</b>
-                      <p>
-                          Сливочно-ванильное с кусочками шоколада
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item10.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>335₽</span>/кг</b>
-                      <p>
-                          Сливочноe с ментоловым сиропом
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item11.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>355₽</span>/кг</b>
-                      <p>
-                          Сливочное с кусочками черного шоколада
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-                  <div class="catalog-item">
-                      <img src="img/item12.jpg" width="267" height="267" alt="Мороженка">
-                      <b><span>420₽</span>/кг</b>
-                      <p>
-                          Сливочное с мятным сиропом
-                      </p>
-                      <a class="catalog-btn" href="#">Быстрый просмотр</a>
-                  </div>
-              </article>    
-          </main>
-          <footer class="main-footer">
-          <div class="container">
+                      Сливочное с мятным сиропом
+                  </p>
+                  <a class="catalog-btn" href="#">Быстрый просмотр</a>
+              </div>
+          </article>
+          <div class="pagination">
+            <a>Pre</a>
+            <a>1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Next</a>
+          </div>
+      </main>
+      <footer class="main-footer">
+          <div class="container main-footer-flex">
               <section class="social">
                   <a class="social-btn social-btn-tw" href="#">Твиттер</a>
                   <a class="social-btn social-btn-instagram" href="#">Инстаграм</a>
@@ -206,7 +221,7 @@
                   <img src="img/htmlacademy-icon.png" width="108" height="38" alt="Html Academy">
                   <p>Сделано в HTML Academy © 2017</p>
               </section>
-          </div>
+          </div>    
       </footer>
   </body>
 </html>
